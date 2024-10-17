@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'exo2-semibold';
+    src: url("../fonts/static/Exo2-SemiBold.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'exo2-bold';
+    src: url("../fonts/static/Exo2-Bold.ttf") format('truetype');
+}
