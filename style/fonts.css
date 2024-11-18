@@ -10,3 +10,7 @@
     font-family: 'poppins-meduim';
     src: url(../fonts/Poppins/Poppins-Medium.ttf) format('truetype');
 }
+@font-face {
+    font-family: "popins-regular";
+    src: url(../fonts/Poppins/Poppins-Regular.ttf) format('truetype');
+}

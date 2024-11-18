@@ -3,6 +3,7 @@
     --gray : #b81212;
     --white: #ffffff;
     --black: #000000;
+    --blurWhite: #F7F7F7;
     --semi_black: #171A1E;
     --gray_balck: #333333;
 }
@@ -134,6 +135,28 @@ body{
     background-color: var(--purple);
     color: var(--white);
     border-color: var(--purple);
+}
+.products_cards{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+}
+.card_sect1,.card_sect2{
+    display: flex;
+    flex-direction: row;
+    gap: 2.3rem;
+}
+.card_image{
+    background-color: var(--blurWhite);
+    padding: 4.6rem 4rem;
+    border-radius: 1.6rem;
+}
+.card_text{
+    display: flex;
+    margin-top: 2.1rem;
+    justify-content: space-between;
+    font-family: 'popins-regular';
 }
 
 /* why choose us */
