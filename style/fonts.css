@@ -14,3 +14,7 @@
     font-family: "popins-regular";
     src: url(../fonts/Poppins/Poppins-Regular.ttf) format('truetype');
 }
+@font-face {
+    font-family: "inter_regular";
+    src: url(../fonts/Inter/static/Inter_18pt-Regular.ttf) format('truetype');
+}

@@ -2,6 +2,7 @@
     --purple : #9747FF;
     --gray : #b81212;
     --white: #ffffff;
+    --blur_white: #F0F0F2; 
     --black: #000000;
     --blurWhite: #F7F7F7;
     --semi_black: #171A1E;
@@ -183,6 +184,28 @@ body{
     line-height: 2rem;
     color: var(--semi_black);
 }
+.choose_us_wraper{
+    margin-top: 3.2rem;
+    display: flex;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+}
+.choose_us_card{
+    padding: 3.6rem 4rem 3.6rem 3rem;
+    border: 0.1rem solid var(--blur_white);
+    border-radius: 1.3rem;
+}
+.choose_us_card_title{
+    margin-top: 2rem;
+    font-family: 'poppins-meduim';
+    font-size: 1.6rem;
+}
+.choose_us_card_text{
+    margin-top: 1rem;
+    font-family: "inter_regular";
+    max-width: 25.3rem;
+    font-size: 1.2rem;
+}
 
 /* stories from community */
 
@@ -215,6 +238,35 @@ body{
     color: var(--semi_black);
 }
 
+/* News letter */
+
+.Newsletter_container{
+    margin-top: 16.4rem;
+    background-color: var(--blurWhite);
+}
+.Newsletter_wraper{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+.Newsletter_title{
+    font-family: 'exo2-semibold';
+    font-size: 3.9rem;
+    max-width: 48.5rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 3.5rem;
+}
+.Newsletter_text{
+    font-family: 'poppins-meduim';
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    max-width: 70.7rem;
+    color: var(--gray_balck);
+}
 
 
 
