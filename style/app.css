@@ -5,8 +5,12 @@
     --blur_white: #F0F0F2; 
     --black: #000000;
     --blurWhite: #F7F7F7;
+    --white12: #E2E7EC;
     --semi_black: #171A1E;
     --gray_balck: #333333;
+    --black13: #4A4A4A;
+    --black14: #414141;
+    --white13: #EEEEEE;
 }
 *{
     text-decoration: none;
@@ -34,28 +38,35 @@ body{
 
 }
 .header{
-    padding-left: 24rem;
-    padding-right: 24rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
     margin-top: 3.2rem;
 }
 
 .header_title{
     color: var(--purple);
-    font-family: 'exo2-bold',sans-serif;
+    font-size: 1.6rem;
+    font-family: 'exo2-bold';
     margin-top: 0.6rem;
     margin-bottom: 0.6rem;
 }
 .header_menu{
     display: flex;
-    font-family: 'exo2-semibold',sans-serif;
+    font-family: 'exo2-semibold';
+    font-size: 1.4rem;
+    color: var(--gray_balck);
 }
 .header_menus{
     margin: 0.6rem 1rem;
+}
+.header_menus:hover{
+    color: var(--purple);
 }
 .header_text_container{
     display: flex;
     flex-direction: column;
     background-image: url("../images/png/Header.png");
+    background-size: cover;
     background-repeat: no-repeat;
     border-radius: 1.3rem;
     justify-content: flex-end;
@@ -67,8 +78,8 @@ body{
 .header_texts{
     display: flex;
     align-items: flex-end;
-    gap: 13rem;
-    margin-top: 21rem;
+    gap: 17.3rem;
+    margin-top: 21.6rem;
     margin-bottom: 6.4rem;
 }
 .header_container2_title{
@@ -76,6 +87,7 @@ body{
     line-height: 7rem;
     font-size: 6.5rem;
     max-width: 67rem;
+    color: var(--gray_balck);
 }
 .header_container2_text{
     font-family: 'poppins-meduim';
@@ -97,8 +109,8 @@ body{
     border-color: var(--purple);
 }
 .main_container{
-    padding-left: 24rem;
-    padding-right: 24rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
 }
 
 /* products section */
@@ -137,21 +149,25 @@ body{
     color: var(--white);
     border-color: var(--purple);
 }
-.products_cards{
+.products_wraper{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 4.8rem 3rem;
     margin-top: 3rem;
-    display: flex;
-    flex-direction: column;
-    gap: 4.8rem;
 }
-.card_sect1,.card_sect2{
-    display: flex;
-    flex-direction: row;
-    gap: 2.3rem;
+.product_card:hover .card_image{
+    transform: scale(1.2);
+    transition: 0.5s ease;
+}
+.card_image_wraper{
+    background-color: var(--blurWhite);
+    border-radius: 1.6rem;
 }
 .card_image{
-    background-color: var(--blurWhite);
     padding: 4.6rem 4rem;
-    border-radius: 1.6rem;
+    max-width: 355px;
+    max-height: 430px;
+    transition: 0.5s ease;
 }
 .card_text{
     display: flex;
@@ -171,7 +187,6 @@ body{
     flex-direction: column;
     gap:4rem;
 }
-
 .chosse_us_title{
     font-family: 'exo2-semibold';
     font-size: 5rem;
@@ -186,24 +201,26 @@ body{
 }
 .choose_us_wraper{
     margin-top: 3.2rem;
-    display: flex;
-    gap: 2.5rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2.8rem;
     flex-wrap: wrap;
 }
 .choose_us_card{
-    padding: 3.6rem 4rem 3.6rem 3rem;
+    padding: 4rem 6rem 3.6rem 2.8rem;
     border: 0.1rem solid var(--blur_white);
     border-radius: 1.3rem;
 }
 .choose_us_card_title{
     margin-top: 2rem;
     font-family: 'poppins-meduim';
-    font-size: 1.6rem;
+    font-size: 2rem;
 }
 .choose_us_card_text{
     margin-top: 1rem;
+    line-height: 2.25rem;
     font-family: "inter_regular";
-    max-width: 25.3rem;
+    max-width: 25.8rem;
     font-size: 1.2rem;
 }
 
@@ -221,7 +238,44 @@ body{
     font-size: 5rem;
     color: var(--semi_black);
 }
-
+.stories_wraper{
+    margin-top: 3.2rem;
+    display: grid;
+    align-items: start;
+    grid-template-columns: auto auto auto;
+}
+.stories_community{
+    border: 0.2rem solid var(--white12);
+    border-radius: 0.8rem;
+    padding-top: 8rem;
+    padding-left: 2.5rem;
+    padding-bottom: 3rem;
+}
+.stories_text{
+    font-family: "popins-regular";
+    color: var(--semi_black);
+    font-size: 1.6rem;
+    max-width: 28.4rem;
+    line-height: 2.8rem;
+}
+.stories_profile{
+    display: flex;
+    margin-top: 4rem;
+    gap: 1rem;
+    align-items: center;
+}
+.profile_name{
+    font-family: 'exo-meduim';
+    color: var(--semi_black);
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+}
+.profile_career{
+    font-family: "popins-regular";
+    color: var(--semi_black);
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
 /* articles and news */
 
 .articles_container{
@@ -237,12 +291,56 @@ body{
     font-size: 5rem;
     color: var(--semi_black);
 }
+.articles_content_container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+.article_content_card:hover .article_image{
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+.article_image_wraper{
+    background-color: var(--blurWhite);
+    border-radius: 1.6rem;
+    overflow: hidden;
+}
+.article_image{
+    max-width: 36rem;
+    min-height: 27.8rem;
+    transition: 0.5s ease;
+}
+.article_content_title{
+    margin-top: 1.6rem;
+    color: var(--gray_balck);
+    line-height: 2.8rem;
+    max-width: 31.4rem;
+    font-family: 'popins_semibold';
+    margin-bottom: 0.8rem;
+}
+.article_content_description{
+    font-family: 'popins-regular';
+    line-height: 2.5rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+    color: var(--gray_balck);
+    max-width: 33.6rem;
+}
+.article_date{
+    font-family: 'popins-regular';
+    line-height: 2.8rem;
+    font-size: 1.1rem;
+    color: var(--gray_balck);
+}
 
 /* News letter */
 
 .Newsletter_container{
     margin-top: 16.4rem;
     background-color: var(--blurWhite);
+    padding: 5.3rem 2rem;
+    border-radius: 2rem;
 }
 .Newsletter_wraper{
     display: flex;
@@ -253,25 +351,108 @@ body{
 }
 .Newsletter_title{
     font-family: 'exo2-semibold';
-    font-size: 3.9rem;
-    max-width: 48.5rem;
+    font-size: 4rem;
+    max-width: 49.7rem;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    line-height: 3.5rem;
+    line-height: 4.5rem;
 }
 .Newsletter_text{
     font-family: 'poppins-meduim';
     font-size: 1.4rem;
     margin-top: 2rem;
+    line-height: 2rem;
     max-width: 70.7rem;
     color: var(--gray_balck);
+    text-align: center;
+}
+.Newsletter_form_input{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    border-radius: 1.6rem;
+    border: var(--white13) solid 0.1rem;
+    outline: none;
+}
+.Newsletter_form_input::placeholder{
+    font-family: "popins-regular";
+    font-size: 1.2rem;
+}
+.Newsletter_view_all{
+    border: var(--gray_balck) solid 0.1rem;
+    color: var(--gray_balck);
+    font-family: 'poppins-meduim';
+    font-size: 1.4rem;
+    padding: 1.4rem 2.6rem;
+    border-radius: 1.4rem;
+    margin-left: 1.8rem;
+    background-color: #ffffff;
+}
+.Newsletter_view_all:hover{
+    background-color: var(--purple);
+    color: var(--white);
+    border-color: var(--purple);
 }
 
+/* footer */
 
-
-
-
+.footer{
+    margin-left: 20rem;
+    margin-right: 20rem;
+    margin-top: 4rem;
+    border-radius: 2rem;
+    background-color: var(--blurWhite);
+}
+.footer_wraper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 1.8rem;
+}
+.footer_description_title{
+    font-family: 'exo2-bold';
+    color: var(--purple);
+    font-size: 2rem;
+    margin-bottom: 1.6rem;
+}
+.footer_description_text{
+    font-family: 'poppins-meduim';
+    font-size: 1.3rem;
+    line-height: 2.34rem;
+    max-width: 23.8rem;
+}
+.footer_quickmenu{
+    display: flex;
+    gap: 2.8rem;
+}
+.quickmenu_title{
+    margin-bottom: 1.7rem;
+    font-family: 'exo2-bold';
+    color: var(--black13);
+    font-size: 2rem;
+}
+.quickmenu_menu{
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    font-family: 'exo2-semibold';
+    color: var(--gray_balck);
+    font-size: 1.4rem;
+}
+.footer_map{
+    background-image: url('../images/png/map.png');
+    background-repeat: no-repeat;
+    padding: 11.9rem 15rem 13.1rem 15rem;
+}
+.we_are_here_button{
+    background-color: var(--black14);
+    border-radius: 0.8rem;
+    padding: 0.6rem 1.2rem;
+    font-family: 'poppins-meduim';
+    line-height: 1.44rem;
+    color: var(--white);
+    font-size: 0.8rem;
+}
 
 
 
