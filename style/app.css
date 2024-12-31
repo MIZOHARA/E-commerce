@@ -162,11 +162,13 @@ body{
 .card_image_wraper{
     background-color: var(--blurWhite);
     border-radius: 1.6rem;
+    display: flex;
+    align-items: center;
 }
 .card_image{
-    padding: 4.6rem 4rem;
-    max-width: 355px;
-    max-height: 430px;
+    padding: 4.6rem 3.5rem;
+    max-width: 30rem;
+    max-height: 40rem;
     transition: 0.5s ease;
 }
 .card_text{
@@ -294,7 +296,7 @@ body{
 .articles_content_container{
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 2rem;
+    gap: 1.6rem;
     margin-top: 4rem;
 }
 .article_content_card:hover .article_image{
@@ -307,8 +309,8 @@ body{
     overflow: hidden;
 }
 .article_image{
-    max-width: 36rem;
-    min-height: 27.8rem;
+    max-width: 33rem;
+    min-height: 26.8rem;
     transition: 0.5s ease;
 }
 .article_content_title{
