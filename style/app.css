@@ -242,9 +242,9 @@ body{
 }
 .stories_wraper{
     margin-top: 3.2rem;
-    display: grid;
-    align-items: start;
-    grid-template-columns: auto auto auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6rem;
 }
 .stories_community{
     border: 0.2rem solid var(--white12);
@@ -252,12 +252,13 @@ body{
     padding-top: 8rem;
     padding-left: 2.5rem;
     padding-bottom: 3rem;
+    padding-right: 2.5rem;
 }
 .stories_text{
     font-family: "popins-regular";
     color: var(--semi_black);
     font-size: 1.6rem;
-    max-width: 28.4rem;
+    max-width: 27.4rem;
     line-height: 2.8rem;
 }
 .stories_profile{
